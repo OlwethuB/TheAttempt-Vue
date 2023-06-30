@@ -1,0 +1,16 @@
+{
+    "skills": [
+      {
+        "id": 1,
+        "image": " The Me",
+        "what": "me@gmail.com",
+        "long": "ThePassword"
+      },
+      {
+        "id": 3,
+        "image": " The Me",
+        "what": "me@gmail.com",
+        "long": "ThePassword"
+      }
+    ]
+  }
