@@ -1,72 +1,46 @@
 {
-  "skills": [
-    {
-      "id": 1,
-      "image": " The Me",
-      "what": "me@gmail.com",
-      "long": "ThePassword"
-    },
-    {
-      "id": 2,
-      "image": " The Me",
-      "what": "me@gmail.com",
-      "long": "ThePassword"
-    },
-    {
-      "id": 3,
-      "image": " The Me",
-      "what": "me@gmail.com",
-      "long": "ThePassword"
-    },
-    {
-      "id": 4,
-      "image": " The Me",
-      "what": "me@gmail.com",
-      "long": "ThePassword"
-    },
-    {
-      "id": 5,
-      "image": " The Me",
-      "what": "me@gmail.com",
-      "long": "ThePassword"
-    }
-  ],
   "experience": [
     {
       "id": 1,
-      "what": " The Me",
-      "where": "me@gmail.com",
-      "when": "ThePassword"
+      "plot": "1111",
+      "what": " Student ",
+      "where": "Parow High School",
+      "when": "2018 - 2022"
     },
     {
       "id": 2,
-      "what": " The Me",
-      "where": "me@gmail.com",
-      "when": "ThePassword"
+      "plot": "2222",
+      "what": "Cashier and Shop Assistant",
+      "where": "Big Fat Butcher",
+      "when": "2018 - 2019"
     },
     {
       "id": 3,
-      "what": " The Me",
-      "where": "me@gmail.com",
-      "when": "ThePassword"
+      "plot": "3333",
+      "what": "Sunday School Teacher (volunteering)",
+      "where": "LightHouse Church Ministries",
+      "when": "2018 - 2020"
     },
     {
       "id": 4,
-      "what": " The Me",
-      "where": "me@gmail.com",
-      "when": "ThePassword"
+      "plot": "4444",
+      "what": "Dancer",
+      "where": "Inspired Stages (BootCamp)",
+      "when": "2019 June - August"
     },
     {
       "id": 5,
-      "what": " The Me",
-      "where": "me@gmail.com",
-      "when": "ThePassword"
+      "plot": "5555",
+      "what": "Volunteering",
+      "where": "Small businesses",
+      "when": "2022"
     },
     {
       "id": 6,
-      "what": " The Me",
-      "where": "me@gmail.com",
-      "when": "ThePassword"
+      "plot": "6666",
+      "what": "Student",
+      "where": "Life Choices Coding Academy",
+      "when": "2023 April - September"
     }
   ],
   "projects": [
@@ -169,6 +143,38 @@
       "image": "me@gmail.com",
       "relation": "me@gmail.com",
       "words": "ThePassword"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "image": " The Me",
+      "what": "me@gmail.com",
+      "long": "ThePassword"
+    },
+    {
+      "id": 2,
+      "image": " The Me",
+      "what": "me@gmail.com",
+      "long": "ThePassword"
+    },
+    {
+      "id": 3,
+      "image": " The Me",
+      "what": "me@gmail.com",
+      "long": "ThePassword"
+    },
+    {
+      "id": 4,
+      "image": " The Me",
+      "what": "me@gmail.com",
+      "long": "ThePassword"
+    },
+    {
+      "id": 5,
+      "image": " The Me",
+      "what": "me@gmail.com",
+      "long": "ThePassword"
     }
   ]
 }

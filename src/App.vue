@@ -1,6 +1,6 @@
 <template>
   <router-view/>
-  <NavSec/>
+  <!-- <NavSec/> -->
   <Skills/>
   <AboutMe/>
   <Projects/>
@@ -22,7 +22,7 @@ import Footer from './components/Footer.vue';
 
 export default {
     // state components 
-    components: {Intro,NavSec,Skills,AboutMe,Projects,Testimonials,Contact,Footer}    
+    components: {Skills,AboutMe,Projects,Testimonials,Contact,Footer}    
 
 }
 </script>

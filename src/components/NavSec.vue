@@ -20,6 +20,10 @@
  </div> <!-- container-fluid.// -->
 </nav>
 </header>
+
+
+<nav v-if="window.PageYOffset > sticky">
+</nav>
 </template>
 
 <script>
