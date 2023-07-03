@@ -1,28 +1,19 @@
 <template>
+  <Intro/>
   <router-view/>
-  <!-- <NavSec/> -->
-  <Skills/>
-  <AboutMe/>
-  <Projects/>
-  <Testimonials/>
-  <Contact/>
   <Footer/>
 </template>
 
 <script>
 
 // import component name from component place   
-import Skills from './components/Skills.vue';
-import AboutMe from './components/About.vue';
-import Projects from './components/Projects.vue';
-import Testimonials from './components/Testimonials.vue';
-import Contact from './components/Contact.vue';
+import Intro from './components/IntroC.vue';
 import Footer from './components/Footer.vue';
 
 
 export default {
     // state components 
-    components: {Skills,AboutMe,Projects,Testimonials,Contact,Footer}    
+    components: {Intro,Footer}    
 
 }
 </script>

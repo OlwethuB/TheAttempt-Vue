@@ -2,7 +2,8 @@
         <div class="p-5 text-white" style="text-align: center;" id="skills">
             <h2>Skills</h2>
             <h6>Programming Related</h6>
-            <div class="container">
+            <div class=" mb-5 mt-5 container">
+                <div class="row">
                 <div class="col">
                     <img src="https://i.postimg.cc/ZqsmHpPK/css-removebg-preview.png" alt="CSS">
                     <p>CSS</p>
@@ -24,20 +25,15 @@
                     <p>Python</p>
                 </div>
                 <div class="col">
-                    <img src="https://" alt="VueJS">
+                    <img src="https://i.postimg.cc/L87zcYyn/vue-transparent-removebg-preview.png" alt="VueJS">
                     <p>VueJS</p>
                 </div>
+            </div>
             </div>
         </div>
 </template>
 
-<script>
-import { } from ''
 
-export default {
-
-}
-</script>
 
 <style>
 div{

@@ -1,8 +1,12 @@
 <template>
   <!-- About about me -->
-  <section class="min-vh-100 container">
+  <section class="mt-5 min-vh-80 container">
     <div class="row">
-      <div class="text-white col" style="text-align: center">
+      <div class="col col-sm-12 col-12 col-lg-6">
+        <!-- image of me  -->
+        <img src="https://i.postimg.cc/L5MzbYRG/C12-Olwethu-Bhiya-2.jpg" alt="Picture of me">
+      </div>
+      <div class="text-white col col-sm-12 col-12 col-lg-6" style="text-align: center">
         <h1 id="About_me">About Me</h1>
         <br />
         <p class="about">
@@ -17,26 +21,28 @@
         </p>
         <br />
       </div>
-      <div class="col">
-        <!-- image of me  -->
-      </div>
     </div>
 
-    <!-- Education and Work  -->
-    <!-- timeline... must work (slide/scroll) -->
+
+
+    
   </section>
 </template>
 
-<script>
-import {} from "";
 
-export default {};
-</script>
 
 <style>
 /* about */
+section{
+  font-family: Rubik;
+}
 .about {
   margin-left: 10%;
   margin-right: 10%;
+}
+img{
+  padding-top: 5%;
+  width: 60%;
+  height: 80%;
 }
 </style>

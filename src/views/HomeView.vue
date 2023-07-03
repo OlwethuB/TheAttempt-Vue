@@ -1,25 +1,43 @@
 <template>
-    <Intro/>
-
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <!-- On top is the "Hero" section -->
+  <!-- fixed scroll header... -->
   <NavSec/>
+  <!-- About me the picture and paragraphs... -->
+  <AboutMe/>
+    <!-- Education and Work  -->
+    <!-- timeline... must work (slide/scroll) -->  
+
+  <Skills/>
+  <Projects/>
+  <Testimonials/>
+  <Contact/>
+
+  <!--  -->
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 import Intro from '@/components/IntroC.vue';
-import NavSec from './components/NavSec.vue';
+import NavSec from '@/components/NavSec.vue';
+import Skills from '@/components/Skills.vue';
+import AboutMe from '@/components/About.vue';
+import Projects from '@/components/Projects.vue';
+import Testimonials from '@/components/Testimonials.vue';
+import Contact from '@/components/Contact.vue';
 
 
 
 export default {
-  name: 'HomeView',
   components: {
-    HelloWorld,Intro,NavSec
+    Intro,NavSec,Skills,AboutMe,Projects,Testimonials,Contact
   }
 }
 </script>
+
+<style>
+body{
+  background-image: linear-gradient(#303544,#4e5a6c,#154271);
+  overflow-x: hidden;
+  font-family: Rubik;
+}
+</style>

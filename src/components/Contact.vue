@@ -9,11 +9,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                                    <h3 class="mb-4">Message me</h3>
-                                    <div id="form-message-warning" class="mb-4"></div>
-                                    <div id="form-message-success" class="mb-4">
-                                        Your message was sent, thank you!
-                                    </div>
+                                    <h3 class="mb-4 fo">Message me</h3>
                                     <form action="https://formspree.io/f/moqzbaow" method="POST" id="contactForm"
                                         name="contactForm" class="contactForm">
                                         <div class="row">
@@ -45,6 +41,10 @@
                                                     <input type="submit" value="Send Message">
                                                     <div class="submitting"></div>
                                                 </div>
+                                                <div class="form-group">
+                                                    <input type="reset" value="Clear Form">
+                                                    <div class="Clearing"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
@@ -52,8 +52,8 @@
                             </div>
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
-                                    <h3>Contact information</h3>
-                                    <p class="mb-4">If at all you would like to work with me, Here is my contact info
+                                    <h3 class="fo">Contact information</h3>
+                                    <p class="mb-4 fo">If at all you would like to work with me, Here is my contact info
                                     </p>
                                     <div class="dbox w-100 d-flex align-items-start">
                                         <div class="icon d-flex align-items-center justify-content-center">
@@ -62,7 +62,7 @@
                                             </a>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Address:</span> <a href="https://goo.gl/maps/qnR6RGGvVR6MZyDb6?coh=178573&entry=tt" target="_blank" style="text-decoration: none; color: #00ceb6"><em>See map link</em></a></p>
+                                            <p><span class="fo">Address:</span> <a href="https://goo.gl/maps/qnR6RGGvVR6MZyDb6?coh=178573&entry=tt" target="_blank" style="text-decoration: none; color: #00ceb6"><em>See map link</em></a></p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
@@ -72,7 +72,7 @@
                                             </a>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Phone:</span> <a href="http://spittoon.co.uk/wp-content/uploads/2019/01/error-meme.jpg" target="_blank" style="text-decoration: none; color: #00ceb6">+ 1235 2355 98</a>
+                                            <p><span class="fo">Phone:</span> <a href="http://spittoon.co.uk/wp-content/uploads/2019/01/error-meme.jpg" target="_blank" style="text-decoration: none; color: #00ceb6">+ 1235 2355 98</a>
                                             </p>
                                         </div>
                                     </div>
@@ -83,7 +83,7 @@
                                             </a>
                                         </div>
                                         <!-- < class="text pl-3"> -->
-                                            <p class="text-wrap"><span>Email:</span><a href="https://media.makeameme.org/created/hello-rtr56j.jpg" target="_blank" style="text-decoration: none; color: #00ceb6;">
+                                            <p class="text-wrap"><span class="fo">Email:</span><a href="https://media.makeameme.org/created/hello-rtr56j.jpg" target="_blank" style="text-decoration: none; color: #00ceb6;">
                                                     Future_corpse@gmail.com</a>
                                             </p>
                                     </div>
@@ -94,7 +94,7 @@
                                             </a>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Website</span> <a href="/Index.html" style="text-decoration: none; color: #00ceb6">Olwethu Bhiya.com</a></p>
+                                            <p><span class="fo">Website</span> <a href="/Index.html" style="text-decoration: none; color: #00ceb6">Olwethu Bhiya.com</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -107,13 +107,7 @@
     </main>
 </template>
 
-<script>
-import { } from ''
 
-export default {
-
-}
-</script>
 
 <style>
     /* Dark ver */
@@ -121,6 +115,7 @@ export default {
   background-image: url(https://i.postimg.cc/CLmdXPgw/Bkg-lndscp-1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 /* form button */
 input {
@@ -176,4 +171,9 @@ input:hover::before {
 .text-wrap a {
   overflow-wrap: anywhere;
 }
+
+.fo{
+    color: #fff;
+}
+
 </style>
