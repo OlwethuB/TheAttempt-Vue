@@ -12,14 +12,13 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import Intro from '@/components/IntroC.vue';
-import NavSec from './components/NavSec.vue';
 
 
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld,Intro,NavSec
+    HelloWorld,Intro,
   }
 }
 </script>
