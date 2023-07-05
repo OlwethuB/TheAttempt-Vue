@@ -1,6 +1,6 @@
 <template>
   <!-- About about me -->
-  <section class="mt-5 min-vh-80 container">
+  <section class="mt-5 mb-5 min-vh-80 container">
     <div class="row">
       <div class="col col-sm-12 col-12 col-lg-6">
         <!-- image of me  -->

@@ -1,5 +1,5 @@
 <template>
-        <div class="p-5 text-white" style="text-align: center;" id="skills">
+        <div class="p-5 text-white mt-5" style="text-align: center;" id="skills">
             <h2>Skills</h2>
             <h6>Programming Related</h6>
             <div class=" mb-5 mt-5 container">

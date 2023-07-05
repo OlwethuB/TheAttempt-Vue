@@ -48,7 +48,7 @@
       "id": 1,
       "image": "https://i.postimg.cc/V6D3mCL0/Land-of-code.png",
       "name": "Land of Code",
-      "desc": "HTML challenge exercise",
+      "desc": "Challenge exercise",
       "type": "HTML & CSS",
       "github": "https://github.com/OlwethuB/Challenge_exercises-.git",
       "live": "https://lanofcod.netlify.app/"
@@ -66,7 +66,7 @@
       "id": 3,
       "image": "https://i.postimg.cc/wjdXFwzW/image-2023-07-03-104556972.png  ",
       "name": "Portfolio",
-      "desc": "Bootstrap Project",
+      "desc": "End of Module Project",
       "type": "Bootstrap",
       "github": "https://github.com/OlwethuB/Portfolio_Project.git",
       "live": "https://olwethuportfolio.netlify.app/"
@@ -75,7 +75,7 @@
       "id": 4,
       "image": "https://i.postimg.cc/DzTj3hXL/image-2023-07-03-104908556.png",
       "name": "BMI Calculator",
-      "desc": "Conditional calculator with JavaScript",
+      "desc": "Conditional calculator",
       "type": "JavaScript",
       "github": "https://github.com/OlwethuB/BMI_task",
       "live": "https://bmi-calculator-task.netlify.app/"
@@ -84,7 +84,7 @@
       "id": 5,
       "image": "https://i.postimg.cc/k5q0FKw0/image-2023-07-03-105156573.png",
       "name": "Temperature Convertor",
-      "desc": "Conditional calculator with JavaScript",
+      "desc": "Conditional calculator",
       "type": "JavaScript",
       "github": "https://github.com/OlwethuB/Temperature_convertor",
       "live": "https://temperature-convertor-task.netlify.app/"
@@ -99,7 +99,7 @@
       "live": "https://esoteric-bookstore.netlify.app/"
     }
   ],
-  "testis": [
+  "tests": [
     {
       "id": 1,
       "name": " ",

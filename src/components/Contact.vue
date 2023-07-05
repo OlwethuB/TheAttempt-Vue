@@ -39,10 +39,10 @@
                                             <div class="col-md-12 pb-2">
                                                 <div class="form-group">
                                                     <input type="submit" value="Send Message">
-                                                    <div class="submitting"></div>
+                                                    <input type="reset" value="Clear Form">
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="reset" value="Clear Form">
+                                                    <div class="submitting"></div>
                                                     <div class="Clearing"></div>
                                                 </div>
                                             </div>

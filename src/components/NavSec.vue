@@ -1,64 +1,108 @@
 <template>
-  <!-- assign a reference to html element using ref attribute -->
-  <header ref="headRef">
-    <div class="bg-warning py-2">Some top header info</div>
 
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
-        <a class="navbar-brand" href="#">Brand</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main_nav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Menu item </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Menu item </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Menu item </a>
-            </li>
-          </ul>
-        </div>
-        <!-- navbar-collapse.// -->
+<header id="header">
+    <nav>
+      <div class="navbar">
+        <router-link class="navbar-brand" to="/">
+          <img src="" alt="logo" class="logo" width="65" height="50" loading="eager"/>
+        </router-link>
+        <!-- center stuff -->
+        <ul class="nav m-auto justify-content-center">
+          <li class="nav-item">
+            <router-link to="/" id="links" class="nav-link active" aria-current="page">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link id="links" class="nav-link" to="/books">Books</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link id="links" class="nav-link" to="/about">About</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link id="links" class="nav-link" to="/contact">Contact</router-link>
+          </li>
+        </ul>
       </div>
-      <!-- container-fluid.// -->
     </nav>
   </header>
 </template>
 
 <script>
-  export default {
-    methods: {
-      vueOnScroll() {
-        var prev = window.pageYOffset;
-        const refs = this.$refs.headRef; // assign the reference in variable
-        window.addEventListener("scroll", () => {
-          var curr = window.pageYOffset;
-          if (prev > curr) {
-            refs.classList.add("scrolled");
-            refs.classList.remove("scrollDown");
-          } else {
-            refs.classList.add("scrollDown");
-            refs.classList.remove("scrolled");
-          }
-          if (curr === 0) {
-            refs.classList.remove("scrollDown");
-            refs.classList.remove("scrolled");
-          }
-            prev = curr;
-        });
-      },
-    },
-    mounted() {
-      // run the function when the component's mount
-      this.vueOnScroll();
+/* ========================================== 
+scrollTop() >= 300
+Should be equal the the height of the header
+// ========================================== */
+
+(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('nav').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
     }
-  }
+    else {
+        $('nav').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
+
 </script>
 
 <style>
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
+}
 
+header h1  {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem; 
+    left: 2rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    position: fixed;
+    z-index: 5;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #a9abae;
+}
 </style>

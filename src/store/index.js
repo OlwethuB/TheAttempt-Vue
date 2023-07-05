@@ -2,14 +2,14 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    testis: null,
+    tests: null,
     projects: null,
     experience: null,
 
   },
   mutations: {
-    setTestis: (state, testis) =>{
-      state.testis = testis;
+    setTests: (state, tests) =>{
+      state.tests = tests;
     },
     setProjects: (state, projects) =>{
       state.projects = projects;
@@ -19,17 +19,17 @@ export default createStore({
     },
   },
   actions: {
-    getTutorials: async (context) => {
-      fetch("http://localhost:3000/testis")
+    getTests: async (context) => {
+      fetch("http://localhost:3000/tests")
         .then((res) => res.json())
-        .then((testis) => context.commit("setTestis", testis));
+        .then((tests) => context.commit("setTests", tests));
     },
-    getTutorials: async (context) => {
+    getProjects: async (context) => {
       fetch("http://localhost:3000/projects")
         .then((res) => res.json())
         .then((projects) => context.commit("setProjects", projects));
     },
-    getTutorials: async (context) => {
+    getExperience: async (context) => {
       fetch("http://localhost:3000/experience")
         .then((res) => res.json())
         .then((experience) => context.commit("setExperience", experience));
