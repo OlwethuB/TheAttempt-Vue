@@ -56,43 +56,23 @@
                                     <p class="mb-4 fo">If at all you would like to work with me, Here is my contact info
                                     </p>
                                     <div class="dbox w-100 d-flex align-items-start">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <a class="btn btn-outline-light btn-floating m-2" href="https://goo.gl/maps/qnR6RGGvVR6MZyDb6?coh=178573&entry=tt" target="_blank" role="button">
-                                                <i class="fa fa-map-marker"></i>
-                                            </a>
-                                        </div>
                                         <div class="text pl-3">
                                             <p><span class="fo">Address:</span> <a href="https://goo.gl/maps/qnR6RGGvVR6MZyDb6?coh=178573&entry=tt" target="_blank" style="text-decoration: none; color: #00ceb6"><em>See map link</em></a></p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <a class="btn btn-outline-light btn-floating m-2" href="http://spittoon.co.uk/wp-content/uploads/2019/01/error-meme.jpg" role="button">
-                                                <i class="fa fa-phone"></i>
-                                            </a>
-                                        </div>
                                         <div class="text pl-3">
                                             <p><span class="fo">Phone:</span> <a href="http://spittoon.co.uk/wp-content/uploads/2019/01/error-meme.jpg" target="_blank" style="text-decoration: none; color: #00ceb6">+ 1235 2355 98</a>
                                             </p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <a class="btn btn-outline-light btn-floating m-2" href="https://media.makeameme.org/created/hello-rtr56j.jpg" role="button">
-                                                <i class="fa fa-paper-plane"></i>
-                                            </a>
-                                        </div>
                                         <!-- < class="text pl-3"> -->
                                             <p class="text-wrap"><span class="fo">Email:</span><a href="https://media.makeameme.org/created/hello-rtr56j.jpg" target="_blank" style="text-decoration: none; color: #00ceb6;">
                                                     Future_corpse@gmail.com</a>
                                             </p>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <a class="btn btn-outline-light btn-floating m-2" href="/Index.html" role="button">
-                                                <i class="fa fa-globe"></i>
-                                            </a>
-                                        </div>
                                         <div class="text pl-3">
                                             <p><span class="fo">Website</span> <a href="/Index.html" style="text-decoration: none; color: #00ceb6">Olwethu Bhiya.com</a></p>
                                         </div>

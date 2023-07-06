@@ -1,10 +1,10 @@
 <template>
   <!-- About about me -->
-  <section class="mt-5 mb-5 min-vh-80 container">
+  <section class="mb-5 mt-3 min-vh-50 container">
     <div class="row">
       <div class="col col-sm-12 col-12 col-lg-6">
         <!-- image of me  -->
-        <img src="https://i.postimg.cc/L5MzbYRG/C12-Olwethu-Bhiya-2.jpg" alt="Picture of me">
+        <img src="https://i.postimg.cc/L5MzbYRG/C12-Olwethu-Bhiya-2.jpg" loading="eager" alt="Picture of me">
       </div>
       <div class="text-white col col-sm-12 col-12 col-lg-6" style="text-align: center">
         <h1 id="About_me">About Me</h1>

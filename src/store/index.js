@@ -1,39 +1,64 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    tests: null,
+    testis: null,
     projects: null,
     experience: null,
-
   },
   mutations: {
-    setTests: (state, tests) =>{
-      state.tests = tests;
+    setTestis: (state, testis) => {
+      state.testis = testis;
     },
-    setProjects: (state, projects) =>{
+    setProjects: (state, projects) => {
       state.projects = projects;
     },
-    setExperience: (state, experience) =>{
+    setExperience: (state, experience) => {
       state.experience = experience;
     },
   },
   actions: {
-    getTests: async (context) => {
-      fetch("http://localhost:3000/tests")
-        .then((res) => res.json())
-        .then((tests) => context.commit("setTests", tests));
+    getTestis: async (context) => {
+      try {
+        fetch("https://olwethub.github.io/db.json")
+          .then((res) => res.json())
+          .then((testis) => {
+            let {testi} = testi;
+            context.commit("setTestis", testis);
+          });
+      } catch (error) {
+        console.error(error);
+      }
     },
     getProjects: async (context) => {
-      fetch("http://localhost:3000/projects")
-        .then((res) => res.json())
-        .then((projects) => context.commit("setProjects", projects));
+      try {
+        fetch("https://olwethub.github.io/db.json")
+          .then((res) => res.json())
+          .then((project) => {
+            let { projects } = project;
+            context.commit("setProjects", projects);
+          });
+      } catch (error) {
+        console.error(error);
+      }
     },
-    getExperience: async (context) => {
-      fetch("http://localhost:3000/experience")
-        .then((res) => res.json())
-        .then((experience) => context.commit("setExperience", experience));
-    },
+    // getExperience: async (context) => {
+    //   try {
+    //     fetch("https://olwethub.github.io/db.json")
+    //     .then((res) => res.json())
+    //     .then((experience) => {
+    //       let {experience} = experience;
+    //       context.commit("setExperience", experience);
+    //     });
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // }
   },
+});
 
-})
+// getProjects: async (context) => {
+//   fetch("http://localhost:3000/projects")
+//     .then((res) => res.json())
+//     .then((projects) => context.commit("setProjects", projects));
+// },

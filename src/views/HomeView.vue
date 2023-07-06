@@ -7,7 +7,43 @@
     <!-- Education and Work  -->
     <!-- timeline... must work (slide/scroll) -->  
     <h2> Experience</h2>
-    <ResuCard/>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="car">
+            <div class="car-body mt-4">
+              <div class="hori-timeline flex-row flex-nowrap" dir="ltr">
+                <ul class="list-inline events">
+                  <li class="list-inline-item event-list">
+                    <div class="py-0">
+                      <button class="btn btn-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2" fdprocessedid="usi3f6">
+                        See All
+                      </button>
+                    </div>
+                  </li>
+                  <ResuCard v-for="experience of experience" :key="experience.id" :experience="experience"/>
+                  <li class="list-inline-item event-list">
+        <div class="py-0">
+            <a class="btn btn-dark collapsed" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">{{ experience.plot }}</a>
+            <div class="multi-collapse collapse" id="multiCollapseExample1">
+                <div class="car car-body">
+                    <h1>{{ experience.when }}</h1>
+                    <h2>{{ experience.what }}</h2>
+                    <p>{{ experience.where }}</p>
+                </div>
+            </div>
+        </div>
+    </li>
+                <li></li>
+              </ul>
+            </div>
+            <!-- end of card -->
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
 <br>
   <Skills/>
 
@@ -28,20 +64,20 @@
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item" v-for="test in tests" :key="test" :class="{active: test.id == 1}">
-          <img :src="test.image" class="d-block w-50" :class="{'float-end': test.id != 1, 'm-auto': test.id == 1}" :alt="test.name"/>
+        <div class="carousel-item" v-for="testi in testis" :key="testi" :class="{active: testi.id == 1}">
+          <img :src="testi.image" class="d-block w-50" :class="{'float-end': testi.id != 1, 'm-auto': testi.id == 1}" :alt="testi.name"/>
           <br>
-          <div class="CaraText" v-if="test.id != 1">
-            <h3>{{ test.name }}</h3>
-            <h4>{{ test.relation }}</h4>
-            <p> {{ test.words }}</p>
+          <div class="CaraText" v-if="testi.id != 1">
+            <h3>{{ testi.name }}</h3>
+            <h4>{{ testi.relation }}</h4>
+            <p> {{ testi.words }}</p>
           </div>
         </div>
       </div>
       <br> 
       <div class="carousel-indicators mt-5">
-        <button type="button" v-for="test in tests" :key="test" data-bs-target="#carouselExampleIndicators" :data-bs-slide-to="test.id - 1" class="thumbnail" :class="{active: test.id == 1}"
-          aria-current="true" :aria-label="'Slide ' + test.id">
+        <button type="button" v-for="testi in testis" :key="testi" data-bs-target="#carouselExampleIndicators" :data-bs-slide-to="testi.id - 1" class="thumbnail" :class="{active: testi.id == 1}"
+          aria-current="true" :aria-label="'Slide ' + testi.id">
         </button>
         
       </div>
@@ -74,15 +110,19 @@ export default {
   computed: {
     projects(){
       return this.$store.state.projects
+    },
+    experience(){
+      return this.$store.state.experience
     }
   },
   mounted(){
-    this.$store.dispatch("getProjects")
+    this.$store.dispatch("getProjects");
+    this.$store.dispatch("getExperience")
   },
 
   data(){
     return{
-      tests: [
+      testis: [
     {
       id: 1,
       name: " ",
@@ -154,7 +194,7 @@ export default {
 
 <style>
 body{
-  background-image: linear-gradient(#303544,#4e5a6c,#154271);
+  background-image: linear-gradient(#9DB2BF,#526D82,#526D82,#27374D);
   overflow-x: hidden;
   font-family: Rubik;
 }
@@ -173,27 +213,27 @@ body{
 
 /* text scroll */
   /* width */
-/* .CaraText::-webkit-scrollbar {
+.CaraText::-webkit-scrollbar {
   width: 10px; 
-} */
+}
 
 /* Track */
-/* .CaraText::-webkit-scrollbar-track {
+.CaraText::-webkit-scrollbar-track {
   background: transparent; 
   border-radius:4px;
-} */
+}
  
 /* Handle */
-/* .CaraText::-webkit-scrollbar-thumb {
+.CaraText::-webkit-scrollbar-thumb {
   background: #4e5a6c; 
   border-radius:4px;
 
-} */
+}
 
 /* Handle on hover */
-/* .CaraText::-webkit-scrollbar-thumb:hover {
+.CaraText::-webkit-scrollbar-thumb:hover {
   background: #303544; 
-} */
+}
 
 
 .carousel-item img {
