@@ -7,8 +7,8 @@
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item" v-for="testi in testis" :key="testi" :class="{active: testi.id == 1}">
-          <img :src="testi.image" class="d-block w-50" :class="{'float-end': testi.id != 1, 'm-auto': testi.id == 1}" :alt="testi.name"/>
+        <div class="carousel-item whole" v-for="testi in testis" :key="testi" :class="{active: testi.id == 1}">
+          <img :src="testi.image" class="d-block w-50 img" :class="{'float-end': testi.id != 1, 'm-auto': testi.id == 1}" :alt="testi.name"/>
           <br>
           <div class="CaraText" v-if="testi.id != 1">
             <h3>{{ testi.name }}</h3>
@@ -47,4 +47,16 @@ export default{
 
 </script>
 
-<style></style>
+<style>
+@media (max-width: 750px){
+  .img{
+    height: 300px;
+  }
+  .CaraText{
+    height: 300px;
+  }
+  .whole{
+    height: 300px;
+  }
+}
+</style>
