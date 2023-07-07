@@ -3,9 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import about from "../views/AboutView.vue"
 import resume from "../views/ResumeView.vue"
 import Skills from "../components/Skills.vue"
-import Projects from "../views/ProjectsView.vue"
-import Testimonials from "../views/TestimonialsView.vue"
-import Contact from "../views/ContactView.vue"
+import projects from "../views/ProjectsView.vue"
+import testimonials from "../views/TestimonialsView.vue"
+import contact from "../views/ContactView.vue"
 
 const routes = [
   {
@@ -34,19 +34,19 @@ const routes = [
   {
     path: '/project',
     name: 'project',
-    component: Projects,
+    component: projects,
     meta: {section: "project"}
   },
   {
     path: '/testi',
     name: 'testi',
-    component: Testimonials,
+    component: testimonials,
     meta: {section: "testimonials"}
   },
   {
     path: '/contact',
     name: 'contact',
-    component: Contact,
+    component: contact,
     meta: {section: "contact"}
   }
 ]

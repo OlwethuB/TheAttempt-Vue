@@ -1,6 +1,6 @@
 <template>
     <!-- <router-link :to="{ name: 'project', params: { id: project.id } }"> -->
-      <div class="box p-0 mb-5 m-lg-3 p-lg-5 col-11 col-lg-3 col-sm-6">
+      <div class="box ml-2 mb-5 m-lg-3 p-lg-5 col-11 col-lg-3 col-sm-6">
         <img :src="project.image" :alt="project.name" class="image" />
         <div class="middle">
           <div class="textbox p-5 m-5">

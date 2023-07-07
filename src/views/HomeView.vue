@@ -14,29 +14,30 @@
   <!-- fixed scroll header... -->
   <NavSec/>
   <!-- About me the picture and paragraphs... -->
-  <section id="">
+  <section id="skills">
     <Skills/>
   </section>
 
-  <section id="">
+  <section id="about">
     <AboutMe/>
   </section>
 
-  <section id="">
+  <section id="resume">
     <Resume/>
   </section>
 <br>
 <!-- <h1 id="Skills">Skills</h1> -->
-<section id="">
+<section id="projects">
   <Projects/>
 </section>
   <br>
+  <section id="testimonials">
 <Testimonials/>
+  </section>
 
-
-
-
+<section id="contact">
   <Contact/>  
+</section>
 
   <!--  -->
 </template>
