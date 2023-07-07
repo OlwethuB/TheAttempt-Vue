@@ -1,8 +1,8 @@
 <template>
 
     <div class="intro">
-        <h1 class="title animate__animated animate__pulse animate__slower">Hi I am Olwethu Bhiya</h1>
-        <h1 class=" animate__animated animate__pulse animate__slow">Aspiring full stack developer</h1>
+        <h1 class="title animate__animated animate__pulse animate__slower animate__delay-3s">Hi I am Olwethu Bhiya</h1>
+        <h1 class=" animate__animated animate__pulse animate__slow animate_delay-3s">Aspiring full stack developer</h1>
         <br>
         <h4> I am good at coding and stuff</h4>
     </div>
