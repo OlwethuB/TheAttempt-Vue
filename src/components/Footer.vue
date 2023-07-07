@@ -18,7 +18,7 @@
                 </a>
                 
                 <!-- Email -->
-                <a class="btn btn-floating m-1" target="_blank" :title="email"  href="/Index.html" role="button">
+                <a class="btn btn-floating m-1" target="_blank" :title="email"  href="/" role="button">
                     <lord-icon src="https://cdn.lordicon.com/ifqmqwui.json" trigger="hover" colors="primary:#fff" style="width:25px;height:25px">
                     </lord-icon>
                 </a>
@@ -53,7 +53,7 @@
             </a>
 
             <!-- CV download -->
-            <a class="btn btn-floating m-1" target="_blank" :title="cv"  href="https://github.com/OlwethuB" role="button">
+            <a class="btn btn-floating m-1" target="_blank" :title="cv" download  href="https://pdf.ac/1UD8W3" role="button">
                 <lord-icon src="https://cdn.lordicon.com/fpmskzsv.json" trigger="hover" colors="primary:#fff" style="width:25px;height:25px">
                 </lord-icon>
             </a>
@@ -97,7 +97,7 @@ export default {
             github:"Go To the github",
             meme:"Meme Video",
             portfolio:"Back Home",
-            email:"Email Address",      
+            email:"olwethu.a.bhiya@gamil.com",      
         }
     }
 }
