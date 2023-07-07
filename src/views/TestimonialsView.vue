@@ -2,7 +2,7 @@
 <!-- <NavSec/> -->
   <!-- Testimonial carasoule -->
    <!-- Home page... Slide show of popular picks -->
-   <section class="mt-5 mb-5">
+   <section class="mt-5 mb-5"> 
 <h2>Testimonials</h2>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
