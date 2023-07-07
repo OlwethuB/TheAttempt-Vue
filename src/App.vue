@@ -1,5 +1,4 @@
 <template>
-  <Intro/>
   <router-view/>
   <Footer/>
 </template>

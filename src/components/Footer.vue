@@ -1,5 +1,6 @@
 <template>
     <!-- Footer -->
+    <br>
     <footer class="bg-dark text-center text-white mt-3">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
@@ -65,13 +66,13 @@
             <!-- <img src="https://i.postimg.cc/Z5JfwqLW/logo.jpg" alt=""> -->
             <h2 class="footer-heading"><a href="#" class="logo"> Olwethu </a></h2>
             <p class="menu">
-                <a href="#" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Intro</a>
-                <a href="#" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">About Me</a>
-                <a href="#" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Skills</a>
-                <a href="#" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Experience</a>
-                <a href="#" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Projects</a>
-                <a href="#" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Testimonials</a>
-                <a href="#" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Contact</a>
+                <a href="/" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Intro</a>
+                <a href="/about" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">About Me</a>
+                <a href="/" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Skills</a>
+                <a href="/resume" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Experience</a>
+                <a href="/project" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Projects</a>
+                <a href="/testi" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Testimonials</a>
+                <a href="/contact" class="p-0 p-lg-3 p-sm-1 text-wrap text-break">Contact</a>
             </p>
         </div>
     </div>

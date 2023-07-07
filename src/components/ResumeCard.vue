@@ -1,11 +1,24 @@
 <template>
   <!-- Education and Work  -->
   <!-- timeline... must work (slide/scroll) -->
-<p> w</p>
+  <li class="list-inline-item event-list justify-content-center">
+        <div class="py-0" v-for="exp in this.experience" :key="exp.id">
+            <!-- <a class="btn btn-dark collapsed" data-bs-toggle="collapse" href="#multiCollapseExample" role="button" aria-expanded="false" aria-controls="multiCollapseExample">{{ exp?.plot }}</a> -->
+            <div class="multi-collapse collapse" id="multiCollapseExample">
+                <div class="car car-body">
+                    <u><h3>{{ exp?.when }}</h3></u>
+                    <h6>{{ exp?.what }}</h6>
+                    <p>{{ exp?.where }}</p>
+                </div>
+            </div>
+        </div>
+    </li>
 </template>
 
 <script>
+import NavSec from '@/components/NavSec.vue';
 export default {
+  components:{NavSec},
     props:["experience"]
 };
 </script>

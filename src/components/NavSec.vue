@@ -1,6 +1,6 @@
 <template>
- <header id="header" class="sticky-top">
-    <nav class="navbar">
+ <header  class="sticky-top">
+    <nav id="header" class="navbar">
       <div class="container">
         <router-link class="navbar-brand" to="/">
           <img src="https://i.postimg.cc/Z5JfwqLW/logo.jpg" alt="logo" class="logo"  loading="eager"/>
@@ -8,19 +8,25 @@
         <!-- center stuff -->
         <ul class="nav m-auto justify-content-center">
           <li class="nav-item">
-            <!-- <a id="links" class="nav-link active" aria-current="page" href="/">Home</a> -->
-            <router-link to="/" id="links" class="nav-link active" aria-current="page">Home</router-link>
+            <router-link to="/" id="links" class="nav-link active" aria-current="page"><lord-icon src="https://cdn.lordicon.com/osuxyevn.json" trigger="click" colors="primary:#fff" style="width:25px;height:25px"></lord-icon>
+</router-link>
           </li>
           <li class="nav-item">
-            <!-- <a id="links" class="nav-link" href="/">Books</a> -->
-            <router-link id="links" class="nav-link" to="/books">Books</router-link>
+            <router-link id="links" class="nav-link" to="/about">About Me</router-link>
           </li>
           <li class="nav-item">
-            <!-- <a id="links" class="nav-link" href="/">About</a> -->
-            <router-link id="links" class="nav-link" to="/about">About</router-link>
+            <router-link id="links" class="nav-link" to="/">Skills</router-link>
           </li>
           <li class="nav-item">
-            <!-- <a id="links" class="nav-link" href="/">Contact</a> -->
+            <router-link id="links" class="nav-link" to="/resume">Resume</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link id="links" class="nav-link" to="/project">Projects</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link id="links" class="nav-link" to="/testi">Testimonials</router-link>
+          </li>
+          <li class="nav-item">
             <router-link id="links" class="nav-link" to="/contact">Contact</router-link>
           </li>
         </ul>
@@ -58,14 +64,14 @@ header {
 }
 
 #links {
-  color: #fff !important;
+  color: #fff;
   font-size: 20px; 
   margin: 20px;
 }
 
 #links:hover{
   border-radius: 4px;
-border: 4px solid #123f92;
+color: #2c75fc;
 margin: 15px;
 
 }

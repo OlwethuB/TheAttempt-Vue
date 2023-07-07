@@ -1,10 +1,10 @@
 <template>
 
     <div class="intro">
-        <h1 class="title">Hi I am Olwethu Bhiya</h1>
-        <h1 class="title">Aspiring full stack developer</h1>
+        <h1 class="title animate__animated animate__pulse animate__slower">Hi I am Olwethu Bhiya</h1>
+        <h1 class=" animate__animated animate__pulse animate__slow">Aspiring full stack developer</h1>
         <br>
-        <h3> I am good at coding and stuff</h3>
+        <h4> I am good at coding and stuff</h4>
     </div>
 
 </template>

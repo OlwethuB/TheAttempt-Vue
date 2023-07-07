@@ -1,6 +1,7 @@
 <template>
+      <NavSec/>
    <!-- the actual body body -->
-   <main class="min-vh-100 m-5" style="text-align: center;">
+   <main class="min-vh-80 m-5" style="text-align: center;">
         <!-- Dark version -->
         <div class="container bd-black" id="darkver">
             <div class="row justify-content-center">
@@ -15,12 +16,12 @@
                                         <div class="row">
                                             <div class="col-md-12 pb-2">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 pb-2">
                                                 <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 pb-2">
@@ -28,12 +29,12 @@
                                             </div>
                                             <div class="col-md-12 pb-2">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 pb-2">
                                                 <div class="form-group">
-                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 pb-2">
@@ -87,7 +88,14 @@
     </main>
 </template>
 
+<script>
+import NavSec from '@/components/NavSec.vue';
 
+export default{
+    components:{NavSec}
+}
+
+</script>
 
 <style>
     /* Dark ver */

@@ -8,14 +8,34 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('../components/Contact.vue')
+    path: '/about',
+    name: 'about',
+    component: () => import('../views/AboutView.vue')
   },
   {
-    path: '/project/:id',
+    path: '/skills',
+    name: 'skills',
+    component: HomeView
+  },
+  {
+    path: '/resume',
+    name: 'resume',
+    component: () => import('../views/ResumeView.vue')
+  },
+  {
+    path: '/project',
     name: 'project',
-    component: () => import('../views/HomeView.vue')
+    component: () => import('../views/ProjectsView.vue')
+  },
+  {
+    path: '/testi',
+    name: 'testi',
+    component: () => import('../views/TestimonialsView.vue')
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('../views/ContactView.vue')
   }
 ]
 
