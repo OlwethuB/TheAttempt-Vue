@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import about from "../views/AboutView.vue"
-import resume from "../views/ResumeView.vue"
+import About from "../views/AboutView.vue"
+import Resume from "../views/ResumeView.vue"
 import Skills from "../components/Skills.vue"
-import projects from "../views/ProjectsView.vue"
-import testimonials from "../views/TestimonialsView.vue"
-import contact from "../views/ContactView.vue"
+import Projects from "../views/ProjectsView.vue"
+import Testimonials from "../views/TestimonialsView.vue"
+import Contact from "../views/ContactView.vue"
 
 const routes = [
   {
@@ -16,7 +16,7 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    component: about,
+    component: About,
     meta: { section: "about" },
   },
   {
@@ -28,25 +28,25 @@ const routes = [
   {
     path: '/resume',
     name: 'resume',
-    component: resume,
+    component: Resume,
     meta: {section: "resume"}
   },
   {
     path: '/project',
     name: 'project',
-    component: projects,
+    component: Projects,
     meta: {section: "project"}
   },
   {
     path: '/testi',
     name: 'testi',
-    component: testimonials,
+    component: Testimonials,
     meta: {section: "testimonials"}
   },
   {
     path: '/contact',
     name: 'contact',
-    component: contact,
+    component: Contact,
     meta: {section: "contact"}
   }
 ]
