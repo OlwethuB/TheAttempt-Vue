@@ -51,6 +51,7 @@ export default{
 @media (max-width: 750px){
   .img{
     height: 300px;
+    object-fit: contain;
   }
   .CaraText{
     height: 300px;
