@@ -1,5 +1,5 @@
 <template>
-      <NavSec/>
+      <!-- <NavSec/> -->
    <!-- the actual body body -->
    <main class="min-vh-80 m-5" style="text-align: center;">
         <!-- Dark version -->

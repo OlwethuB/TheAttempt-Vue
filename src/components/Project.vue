@@ -35,6 +35,8 @@
       height: 150px;
     }
   }
+
+
   
   .image {
     opacity: 1;
@@ -48,7 +50,7 @@
   @media (max-width: 800px){
     .image{
       width: 250px;
-      height: 150px;
+      height: 200px;
     }
   }
   
@@ -57,10 +59,17 @@
     opacity: 0;
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    width: 290px;
+  }
+  @media (max-width: 750px){
+    .middle{
+      left: 20%;
+      top:60%;
+    }
   }
   
   .box:hover .image {
@@ -76,6 +85,13 @@
     padding: 20px ;
     margin: 30px;
     width: 300px;
+    height: auto;
+  }
+
+  @media (max-width: 750px){
+    .textbox{
+      height: 200px;
+    }
   }
   
   .textbox h1{

@@ -1,20 +1,42 @@
 <template>
+        <router-link to="#intro" class="hidden" />
+      <router-link to="#about" class="hidden" />
+      <router-link to="#resume" class="hidden" />
+      <router-link to="#skills" class="hidden" />
+      <router-link to="#projects" class="hidden" />
+      <router-link to="#testimonials" class="hidden" />
+      <router-link to="#contact" class="hidden" />
+
   <!-- On top is the "Hero" section -->
-  <Intro/>
+  <section id="#intro">
+    <Intro/>
+  </section>
   <!-- fixed scroll header... -->
   <NavSec/>
   <!-- About me the picture and paragraphs... -->
-  <!-- <AboutMe/> -->
+  <section id="">
+    <Skills/>
+  </section>
 
+  <section id="">
+    <AboutMe/>
+  </section>
 
+  <section id="">
+    <Resume/>
+  </section>
 <br>
 <!-- <h1 id="Skills">Skills</h1> -->
-  <Skills/>
+<section id="">
+  <Projects/>
+</section>
+  <br>
+<Testimonials/>
 
 
 
 
-  <!-- <Contact/>   -->
+  <Contact/>  
 
   <!--  -->
 </template>
@@ -26,13 +48,15 @@ import NavSec from '@/components/NavSec.vue';
 import Skills from '@/components/Skills.vue';
 import AboutMe from '@/views/AboutView.vue';
 import Testimonials from '@/views/TestimonialsView.vue';
+import Projects from '@/views/ProjectsView.vue';
 import Contact from '@/views/ContactView.vue';
+import Resume from '@/views/ResumeView.vue'
 
 
 
 export default {
   components: {
-    Intro,NavSec,Skills,AboutMe,Testimonials,Contact
+    Intro,NavSec,Skills,AboutMe,Testimonials,Contact,Projects,Resume
   },
 }
 </script>

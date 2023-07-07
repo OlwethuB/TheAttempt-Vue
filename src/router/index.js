@@ -1,5 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import about from "../views/AboutView.vue"
+import resume from "../views/ResumeView.vue"
+import Skills from "../components/Skills.vue"
+import Projects from "../views/ProjectsView.vue"
+import Testimonials from "../views/TestimonialsView.vue"
+import Contact from "../views/ContactView.vue"
 
 const routes = [
   {
@@ -8,34 +14,40 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue')
+    path: "/about",
+    name: "about",
+    component: about,
+    meta: { section: "about" },
   },
   {
     path: '/skills',
     name: 'skills',
-    component: HomeView
+    component: Skills,
+    meta: {section: "skills"}
   },
   {
     path: '/resume',
     name: 'resume',
-    component: () => import('../views/ResumeView.vue')
+    component: resume,
+    meta: {section: "resume"}
   },
   {
     path: '/project',
     name: 'project',
-    component: () => import('../views/ProjectsView.vue')
+    component: Projects,
+    meta: {section: "project"}
   },
   {
     path: '/testi',
     name: 'testi',
-    component: () => import('../views/TestimonialsView.vue')
+    component: Testimonials,
+    meta: {section: "testimonials"}
   },
   {
     path: '/contact',
     name: 'contact',
-    component: () => import('../views/ContactView.vue')
+    component: Contact,
+    meta: {section: "contact"}
   }
 ]
 

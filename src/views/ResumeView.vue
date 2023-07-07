@@ -1,6 +1,6 @@
 <template>
   
-  <NavSec/>
+  <!-- <NavSec/> -->
   
   <!-- Education and Work  -->
   <!-- timeline... must work (slide/scroll) -->  
@@ -27,7 +27,7 @@
       </div>
     </div>
   </div>
-  <Skills/>
+  <!-- <Skills/> -->
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-<NavSec/>
+<!-- <NavSec/> -->
   <!-- Testimonial carasoule -->
    <!-- Home page... Slide show of popular picks -->
    <section class="mt-5 mb-5">

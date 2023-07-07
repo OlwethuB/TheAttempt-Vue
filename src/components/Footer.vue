@@ -7,25 +7,25 @@
             <!-- Section: Social media -->
             <div class="">
                 <!-- Call -->
-                <a class="btn btn-floating m-1" target="_blank" href="https://i.kym-cdn.com/entries/icons/original/000/017/981/The_Real_Story_Behind_Black_Guy_On_The_Phone_Meme-500x500.jpg" role="button">
+                <a class="btn btn-floating m-1" target="_blank" :title="call" href="https://i.kym-cdn.com/entries/icons/original/000/017/981/The_Real_Story_Behind_Black_Guy_On_The_Phone_Meme-500x500.jpg" role="button">
                     <lord-icon src="https://cdn.lordicon.com/ssvybplt.json" trigger="hover" colors="primary:#fff" style="width:25px;height:25px">
                     </lord-icon>
                 </a>
                 
                 <!-- Google -->
-                <a class="btn btn-floating m-1" target="_blank" href="/Index.html" role="button">
+                <a class="btn btn-floating m-1" target="_blank" :title="portfolio"  href="/" role="button">
                     <lord-icon src="https://cdn.lordicon.com/osuxyevn.json" trigger="hover" colors="primary:#fff" style="width:25px;height:25px"></lord-icon>
                 </a>
                 
                 <!-- Email -->
-                <a class="btn btn-floating m-1" target="_blank" href="/Index.html" role="button">
+                <a class="btn btn-floating m-1" target="_blank" :title="email"  href="/Index.html" role="button">
                     <lord-icon src="https://cdn.lordicon.com/ifqmqwui.json" trigger="hover" colors="primary:#fff" style="width:25px;height:25px">
                     </lord-icon>
                 </a>
                 
                 <!-- Youtube -->
                 <!-- Button trigger modal -->
-                <a type="button" href="https://www.youtube.com/watch?v=BBJa32lCaaY" class="btn btn-floating m-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button">
+                <a type="button" :title="meme" href="https://www.youtube.com/watch?v=BBJa32lCaaY" class="btn btn-floating m-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button">
                     <lord-icon src="https://cdn.lordicon.com/ensnyqet.json" trigger="click" colors="primary:#fff" style="width:25px;height:25px">
                     </lord-icon>
                 </a>
@@ -47,13 +47,13 @@
             </div>
             
             <!-- Github -->
-            <a class="btn btn-floating m-1" target="_blank" href="https://github.com/OlwethuB" role="button">
+            <a class="btn btn-floating m-1" target="_blank" :title="github"  href="https://github.com/OlwethuB" role="button">
                 <lord-icon src="https://cdn.lordicon.com/wluyqhxh.json" trigger="hover" colors="primary:#fff" style="width:25px;height:25px">
                 </lord-icon>
             </a>
 
             <!-- CV download -->
-            <a class="btn btn-floating m-1" target="_blank" href="https://github.com/OlwethuB" role="button">
+            <a class="btn btn-floating m-1" target="_blank" :title="cv"  href="https://github.com/OlwethuB" role="button">
                 <lord-icon src="https://cdn.lordicon.com/fpmskzsv.json" trigger="hover" colors="primary:#fff" style="width:25px;height:25px">
                 </lord-icon>
             </a>
@@ -85,6 +85,23 @@
     </footer>
 
 </template>
+<script>
+import { github } from 'fontawesome';
+
+
+export default {
+    data(){
+        return{
+            call:"Number Unavailable",
+            cv:"Download CV",
+            github:"Go To the github",
+            meme:"Meme Video",
+            portfolio:"Back Home",
+            email:"Email Address",      
+        }
+    }
+}
+</script>
 
 <style>
 /* logo */

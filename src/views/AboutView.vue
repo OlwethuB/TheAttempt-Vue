@@ -1,5 +1,5 @@
 <template>
-    <NavSec/>
+    <!-- <NavSec/> -->
   <!-- About about me -->
   <section class="mb-5 mt-3 min-vh-50 container">
     <div class="row">

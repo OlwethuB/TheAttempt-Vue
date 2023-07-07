@@ -1,5 +1,5 @@
 <template>
-    <NavSec/>
+    <!-- <NavSec/> -->
   <!-- Projects -->
   <h2>Projects</h2>
   <div v-if="projects" class="container" id="po">
