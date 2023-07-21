@@ -22,7 +22,7 @@
     <AboutMe/>
   </section>
 
-  <section id="resume">
+  <section id="resume">   
     <Resume/>
   </section>
 <br>

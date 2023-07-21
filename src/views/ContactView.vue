@@ -10,7 +10,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                                    <h3 class="mb-4 fo">Message me</h3>
+                                    <h3 class="mb-4 fo">Message me...</h3>
                                     <form action="https://formspree.io/f/moqzbaow" method="POST" id="contactForm"
                                         name="contactForm" class="contactForm">
                                         <div class="row">
